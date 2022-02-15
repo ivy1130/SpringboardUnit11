@@ -25,6 +25,17 @@ div#board {
 	border-radius: 50%;
 	position: relative;
 	z-index: -1;
+	animation-name: fall-animation;
+	animation-duration: 800ms;
+}
+
+@keyframes fall-animation {
+	from {
+		top: -450px;
+	}
+	to {
+		top: 0px;
+	}
 }
 
 .piece.p1 {
@@ -36,6 +47,5 @@ div#board {
 }
 
 #top-row td {
-	/* position: relative; */
 	border: none;
 }
