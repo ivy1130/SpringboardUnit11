@@ -1,0 +1,41 @@
+h1 {
+	text-align: center;
+}
+
+/* game board table */
+
+div#board {
+	width: auto;
+	margin: auto;
+	max-width: fit-content;
+}
+
+#board td {
+	width: 50px;
+	height: 50px;
+	border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+	margin: 5px;
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	position: relative;
+	z-index: -1;
+}
+
+.piece.p1 {
+	background-color: red;
+}
+
+.piece.p2 {
+	background-color: blue;
+}
+
+#top-row td {
+	/* position: relative; */
+	border: none;
+}
